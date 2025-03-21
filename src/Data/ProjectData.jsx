@@ -11,7 +11,7 @@ export const projectData = [
         title: "Imanage",
         develop_date: "March-2025",
         category: "Web",
-        path: "/src/assets/images/imanagep1.png",
+        path: "https://i.postimg.cc/fR5nkgNN/imanagep1.png",
     },
     {
         id:3,
