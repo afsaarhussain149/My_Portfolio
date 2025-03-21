@@ -4,7 +4,7 @@ export const projectData = [
         title: "Navigation System",
         develop_date: "May-2023",
         category: "Web",
-        path: "/src/assets/images/navigation.jpeg",
+        path: "https://i.postimg.cc/rmXdsmT3/navigation.jpg",
     },
     {
         id:2,
@@ -18,6 +18,6 @@ export const projectData = [
         title: "Portfolio",
         develop_date: "March-2025",
         category: "Web",
-        path: "/src/assets/images/portfoliop1.png",
+        path: "https://i.postimg.cc/XqnpKzpg/portfoliop1.png",
     },
 ];
