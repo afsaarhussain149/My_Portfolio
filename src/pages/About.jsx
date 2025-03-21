@@ -51,7 +51,7 @@ const About = () => {
 
                 <div className="flex flex-col md:flex-row items-center md:items-start">
                     <div className="w-full md:w-[40%] flex justify-center" data-aos="fade-up">
-                        <img src="\src\assets\images\profilepic.jpg" className="rounded-xl w-[70%] md:w-full" />
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQGywBMJBYolag/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1706592223165?e=1747872000&v=beta&t=5tGJxPe75ypbBb5SVEcF-hrbDFk3aAZQzw_uVyrHLqw" className="rounded-xl w-[70%] md:w-full" />
                     </div>
                     <div className="w-full md:w-[60%] mx-0 md:mx-10 text-center md:text-left" data-aos="fade-up">
                         <h2 className="text-2xl font-bold mt-5">Frontend and Backend Developer</h2>
