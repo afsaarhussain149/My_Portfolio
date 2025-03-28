@@ -46,7 +46,7 @@ export const ProjectsdetailsData = [
         category: "Website",
         client: "Own",
         project_date: "March-2025",
-        project_URL:"https://vercel.com/afsar-hussains-projects/my-portfolio",
+        project_URL:"https://my-portfolio-dusky-two-82.vercel.app/",
         project_para:"The Portfolio Website project is a personal web-based platform designed to showcase an individual's skills, experience, and projects in a professional manner. It serves as an interactive resume, allowing visitors to explore the developer's expertise, past work, and achievements. The website typically includes sections such as an introduction, skills, projects, education, and contact information. Built using modern web technologies like HTML, Bootstrap, TailwindCSS, and Reactjs, the portfolio website provides a visually appealing and responsive design. It helps professionals establish an online presence, making it easier for recruiters and clients to evaluate their capabilities and connect with them for potential opportunities."
     },
 ];
