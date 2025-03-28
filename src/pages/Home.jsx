@@ -13,7 +13,8 @@ const Home = () => {
     return (
       <>
         <div 
-            className="w-full h-screen sm:h-[68rem] bg-cover sm:bg-center bg-[url('/src/assets/images/AS.jpg')]"
+        className="w-full h-[300px] sm:h-[68rem] bg-cover bg-[center_top_5%] sm:bg-[center_top_40%] bg-no-repeat"
+        style={{ backgroundImage: "url('/src/assets/images/AS.jpg')" }}
         >
             <div className="text-center px-4 py-32 md:py-[20rem]" data-aos="zoom-in">
                 <h1 className="text-3xl sm:text-5xl font-semibold text-white">Afsar Hussain</h1>
