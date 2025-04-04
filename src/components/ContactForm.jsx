@@ -14,7 +14,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://getform.io/f/YOUR_UNIQUE_ENDPOINT", {
+    const response = await fetch("https://getform.io/f/bkkyvreb", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: { "Content-Type": "application/json" },
