@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -8,32 +7,24 @@ const ContactForm = () => {
     subject: "",
     message: ""
   });
-
-  const [status, setStatus] = useState(""); 
-
   
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    emailjs.send(
-      "service_9sq8axs",  
-      "template_94ftz4n", 
-      formData,
-      "5HDX_SeuLrWyMH6jG"   
-    )
-    .then((response) => {
-      console.log("SUCCESS!", response.status, response.text);
-      setStatus("Message sent successfully!");
-      setFormData({ name: "", email: "", subject: "", message: "" }); 
-    })
-    .catch((err) => {
-      console.error("FAILED...", err);
-      setStatus("Failed to send message. Try again.");
+    const response = await fetch("https://getform.io/f/YOUR_UNIQUE_ENDPOINT", {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: { "Content-Type": "application/json" },
     });
+    if (response.ok) {
+      alert("Form successfully submitted!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } else {
+      alert("Something went wrong!");
+    }
   };
 
   return (
@@ -97,8 +88,6 @@ const ContactForm = () => {
         <button type="submit" className="w-full text-white font-semibold tracking-widest bg-[#34b7a7] mt-6 py-2 rounded-full hover:scale-105 transition-transform duration-300">
           Send Message
         </button>
-
-        {status && <p className="text-center mt-4 font-semibold">{status}</p>}
       </form>
     </div>
   );
