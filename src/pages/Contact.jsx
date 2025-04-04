@@ -57,7 +57,6 @@ const Contact = () => {
               ></iframe>
             </div>
           </div>
-          
           <ContactForm />
         </div>
       </div>
