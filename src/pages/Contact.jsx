@@ -22,8 +22,7 @@ const Contact = () => {
           </div>  
         </div>  
 
-        <form className='grid grid-cols-1 lg:grid-cols-2 gap-6 my-12'>
-
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 my-12'>
           <div className='card p-5 shadow border-0' data-aos="fade-up">
             <div className='info-wrap space-y-6'>
 
@@ -60,7 +59,7 @@ const Contact = () => {
           </div>
           
           <ContactForm />
-        </form>
+        </div>
       </div>
     </>
   );
